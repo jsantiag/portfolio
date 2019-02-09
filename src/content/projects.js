@@ -7,12 +7,13 @@ export default [
   {
    title:'CallMEter',
    description:'CallMEter is a tool for anyone who tracks minutes spent on calls for their business. CallMEter takes care of tracking calls made through your browser and on your phone with the help of Twilio\'s api. Invoices are generated based off time spent and contact settings, with the help of NodeMailer they can be sent with the click of a button. CallMEter was a team effort! Check out my 4 good friends and our live demo with the links below! ',
-   collaborators:{'Brady Fox':'','Jonathon Garrett':'','Allister Rooke':'', 'Sean Nealon':''},
+   collaborators:[['Brady Fox','portfolioLink'],['Jonathon Garrett','portfolioLink']['Allister Rooke', 'portFolioLink' ],['Sean Nealon', 'portfolioLink']],
    image:callMEter,
+   alt:"image landing page for CallMEter application",
    stack:[
      "ReactJS", "Redux", "NodeJS", "NodeMailer", "Twilio", "Express", "MongoDB","Mongoose","Passport & Bcrypt", "JWT Auth", "Netlify" 
    ],
-   demo:{"organization name":"CallMeter Demo", password:"password123"},
+   demo:[["organization name","CallMeter Demo"], ["password","password123"]],
    links:{
      github:'https://github.com/thinkful-ei25/billable-client',
      live:'https://callmeter.netlify.com'
@@ -21,7 +22,7 @@ export default [
   {
   title:'Emoji Tutor',
   description:'Emoji Tutor is a linked list based, spaced-repetition learning app made to boost emoji literacy 👩‍🏫. Emojis are quickly becoming a staple in modern communication 🗣️, use Emoji Tutor to keep up 🏃 with the times ⏳.',
-  collaborators:{'Logan Wang':''},
+  collaborators:{'Logan Wang':'portfolioLink'},
   image:emoji,
   stack:[
     "ReactJS","Redux", "NodeJS", "Express", "Passport & Bcrypt", "JWT Auth", "Mongoose", "MongoDB", "Heroku"
