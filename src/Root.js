@@ -10,6 +10,7 @@ import projects from './content/projects';
 import aboutMe from './content/aboutMe';
 import './components/_Progress.css';
 import './components/_About.css';
+import './components/_Nav.css';
 
 export default class Root extends Component {
   render() {

@@ -1,0 +1,22 @@
+.nav-container{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width:80%;
+  font-family: Camphor,Open Sans,Segoe UI,sans-serif;
+  font-weight: 300;
+  font-size: 1.3em;
+  line-height: 40px;
+}
+
+.scroll-link-container{
+  display:inline-flex;
+}
+.logo{
+  display:inline-flex;
+}
+li {
+  list-style: none;
+  padding:15%;
+
+}
