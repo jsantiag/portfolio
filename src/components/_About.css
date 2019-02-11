@@ -1,0 +1,8 @@
+.aboutMe-container{
+  margin: 0 auto;
+  width:60%;
+  font-family: 'Camphor', Open Sans, Segoe UI, sans-serif;
+  display:flex; 
+  align-content: center;
+}
+

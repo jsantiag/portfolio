@@ -1,0 +1,130 @@
+*{
+  box-sizing: border-box;
+  align-content: center;
+}
+body{
+  background-image: linear-gradient(#F8B195,#F67280,#C06C84,#6C5B78,#355C7D);
+}
+
+.proj-card {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 60px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 50px 100px rgba(50, 50, 93, 0.05),
+    0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.proj-content {
+  padding: 30px;
+  width: 60%;
+  z-index: 2;
+}
+.proj-container{
+  margin: 0 auto;
+  width:60%;
+  font-family: 'Camphor', Open Sans, Segoe UI, sans-serif;
+}
+.proj-image {
+  max-width: 80%;
+  position: absolute !important; 
+  /* padding:20%; */
+  left:0;
+  top:0;
+}
+
+.proj-background {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    height: 110%;
+    width: 60%;
+    background-color:#fff;
+    background-size: cover;
+}
+
+
+
+
+h3 {
+  font-weight: 500;
+  font-size: 1.8em;
+  line-height: 38px;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.proj-links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.project-link {
+  margin-right: 20px;
+  margin-top: 20px;
+  white-space: nowrap;
+  display: inline-block;
+  line-height: 40px;
+  padding: 0 14px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
+    0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  letter-spacing: 0.025em;
+  text-decoration: none;
+  transition: all 0.15s ease;
+  font-family: 'Camphor', Open Sans, Segoe UI, sans-serif;
+  font-size: 0.9em;
+  font-weight: 600;
+  box-sizing: border-box;
+  background: #6C5B78;
+  color: #fff;
+}
+.project-link:hover{
+  box-shadow: 0px 0px 5px 5px rgb(211, 115, 203);
+
+}
+
+.proj-skill{
+  
+    border-radius: 4px;
+    border: solid 2px #C06C84;
+    padding: 8px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-family: 'roboto', Open Sans, Segoe UI, sans-serif;
+    font-size: 0.85em;
+    font-weight: bold;
+    color: #6C5B78;
+
+}
+
+.proj-skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.proj-collab {
+  display:flex;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
+}
+
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(150, 70, 78);
+}
+a:hover{
+  text-decoration:underline;
+}
+p {
+  margin-bottom: 30px;
+  line-height: 27px;
+  color: rgb(23, 39, 53);
+}
