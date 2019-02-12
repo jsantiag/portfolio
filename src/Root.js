@@ -16,19 +16,21 @@ export default class Root extends Component {
   render() {
     return (
       <main className="main-container">
-        <Nav/>
+        <Nav sprite={aboutMe.sprite}/>
         <About 
           aboutMe={aboutMe}
           />
-        <h2 id="projects" className="section-title">
+        <h1 id="projects" className="section-title">
           Projects
-        </h2>
+        </h1> 
+        <hr id="proj-line"></hr> 
         <Projects
           projects={projects}
         />
-        <h2 id="contact" className="section-title">
+        <h1 id="contact" className="section-title">
           Contact me!
-        </h2>
+        </h1>
+        <hr></hr>
         {/* <Contact/>   */}
         {/* <Footer/> */}
       </main> 

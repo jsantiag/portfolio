@@ -128,3 +128,30 @@ p {
   line-height: 27px;
   color: rgb(23, 39, 53);
 }
+
+h1, #projects{
+  font-weight: 650;
+  font-size: 2em;
+  line-height: 50px;
+  margin-top: 0;
+  margin-bottom: 35px;
+  font-family: 'Camphor', Open Sans, Segoe UI, sans-serif;
+  text-align: center;
+}
+
+#contact{
+  color:#F8B195;
+}
+#projects {
+  color:rgb(59, 48, 66);
+}
+hr{
+  width:70%;
+  margin-bottom: 40px;
+  border-color:#F8B195;
+  border-style:solid;
+  opacity:.5 ;
+}
+#proj-line{
+  border-color:rgb(59, 48, 66);
+}
