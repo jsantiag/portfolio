@@ -1,19 +1,29 @@
-import React, {PureComponent} from 'react'; 
+/* eslint-disable no-undef */
+import React, {Component, PureComponent} from 'react'; 
 
-class AboutMeSection extends PureComponent {
+class AboutMeSection extends Component {
+    constructor(props){
+      super(props);
+      this.state = {
+        hideAboutMe: true
+      }; 
+    }
+    
+    handleAboutMe(event){
+      event.preventDefault();
+      this.setState({hideAboutMe:!this.state.hideAboutMe})
+    }
+
   render() {
-    const {greetings, aboutMe, sprite} = this.props
+    const {greetings, sprite} = this.props;
+    console.log(sprite);
     return (
-      <div className="aboutMe-container">
-        <div className="aboutMe-background"/> 
-        <div id="sprite" className="sprite-container">
-          <img href={sprite} alt="this is my pixel art self-portrait, short curly hair and gold hoops"/>        
-        </div> 
-        <h3>{greetings}</h3>
-        <div className = "aboutMe-content" >
-          <p className="aboutMe-blurb">{aboutMe}</p>
-        </div>
-      </div>
+    <div className="aboutMe-container">
+      <section className="sprite-greeting"> 
+          <img src={sprite} alt="this is my pixel art self-portrait, short curly hair and gold hoops"/>        
+          <h3>{greetings}</h3>
+      </section>  
+    </div>
     )
   }
 }

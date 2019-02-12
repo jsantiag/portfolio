@@ -2,8 +2,13 @@ import tea from '../images/tea.png';
 import emoji from '../images/loginEmoji.JPG';
 import callMEter from '../images/LandingPageCM.JPG';
 import jung from '../images/jung.jpg';
+import me from '../images/mysprite.JPG';
 
 const projects = [
+  {title: 'About Me',
+  description:'👋 Hey all, I go by Jocelyn and I\'m a full stack developer based in Boston, I found my way to programming as a studio art major my senior year at Wellesley (CO \'18). I\'ve always had a thing for making experiences for people, that was the draw in my practice in studio and that was the primary drive for taking the steps to become a developer post grad. I joined Thinkful\'s full stack engineering immersion program and have not looked back. In the past six months I\'ve learned to build applications from the ground up and worked with many great people, some of whom you\'ll meet below. I look forward to forging my careerpath as a developer, keeping the goal of crafting better user experiences close as my guide through all that lies ahead. Take a look at some of my projects and drop me a line in the form below.',
+  image:me
+  },
   {
    title:'CallMEter',
    description:'CallMEter is a tool for anyone who tracks minutes spent on calls for their business. CallMEter takes care of tracking calls made through your browser and on your phone with the help of Twilio\'s api. Invoices are generated based off time spent and contact settings, with the help of NodeMailer they can be sent with the click of a button. CallMEter was a team effort! Check out my 4 good friends and our live demo with the links below! ',

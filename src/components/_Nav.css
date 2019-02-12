@@ -3,7 +3,7 @@
   justify-content: space-between;
   margin: 0 auto;
   width:80%;
-  font-family: Camphor,Open Sans,Segoe UI,sans-serif;
+  font-family: Verdana,Open Sans,Segoe UI,sans-serif;
   font-weight: 300;
   font-size: 1.3em;
   line-height: 40px;
@@ -14,12 +14,10 @@
 }
 
 
-
-
 li {
   list-style: none;
-  padding:15%;
-  font-family: Camphor,Open Sans,Segoe UI,sans-serif;
+  padding:5%;
+  font-family: Verdana,Open Sans,Segoe UI,sans-serif;
   font-weight: 450;
   font-size: 1.3em;
   line-height: 50px;

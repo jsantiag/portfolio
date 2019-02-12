@@ -68,7 +68,7 @@ class ProjectCard extends PureComponent {
           <h3>{title}</h3>
           <p className="proj-description">{description}</p>
           {collaborators?<Collaboration collaborators={collaborators}/>:null}
-          <ProjectStack skills={skills}/>
+          {skills?<ProjectStack skills={skills}/>:null}
           {links?<ProjectLinks links={links}/>:null}
         </div>
       </div>
