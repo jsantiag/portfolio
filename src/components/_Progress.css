@@ -65,8 +65,8 @@ h3 {
 
 .proj-links {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: center;
+  /* align-items: center; */
   flex-wrap: wrap;
 }
 
@@ -112,11 +112,12 @@ h3 {
 .proj-skills {
   display: flex;
   flex-wrap: wrap;
+  justify-content:center;
 }
 
 .proj-collab {
   display:flex;
-  justify-content: space-evenly;
+  justify-content: center;
   padding-bottom: 30px;
 }
 
@@ -171,6 +172,30 @@ h1{
       0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.1);
     overflow: hidden;
   }
+  .button-toggle > button{
+    margin:auto;
+    white-space: nowrap;
+    display: inline-block;
+    padding: 0 14px;
+    padding-left:10px;
+    padding-bottom:2px;
+    border-radius: 5px;
+    letter-spacing: 0.025em;
+    text-decoration: none;
+    transition: all 0.15s ease;
+    font-family: 'Verdana', Open Sans, Segoe UI, sans-serif;
+    font-size: 0.9em;
+    font-weight: 400;
+    box-sizing: border-box;
+    background: #355C7D;
+    color: white;
+  }
+  .button-toggle{
+    display:flex;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+
   .pcontent-small >h3 {
     font-weight: 650;
     font-size: 2em;
@@ -211,6 +236,10 @@ h1{
   margin:auto;
   width:90%;
 }
+ .pcontent-small{
+  margin:0,0,0,0; 
+}
+
 }
 @media only screen and (max-width:730px){
   .proj-collab {
@@ -222,4 +251,5 @@ h1{
   .proj-container{
     width:100%;
   }
+
 }

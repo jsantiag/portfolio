@@ -1,4 +1,5 @@
-import React, {PureComponent} from 'react'; 
+/* eslint-disable react/jsx-no-target-blank */
+import React, {PureComponent, Component} from 'react'; 
 
 class ProjectSkill extends PureComponent{
   render(){
@@ -23,7 +24,7 @@ class Friends extends PureComponent{
   render(){
     return(
       <div>
-      <a className="friend" href={this.props.collaborators[1]}>{this.props.collaborators[0]}</a>
+      <a rel="noopener" target="_blank" className="friend" href={this.props.collaborators[1]}>{this.props.collaborators[0]}</a>
       <br/>
       </div>
     )
@@ -57,36 +58,65 @@ class ProjectLinks extends PureComponent {
 }
 
 
-class ProjectCard extends PureComponent {
+class ProjectCard extends Component {
+  constructor(props){
+    super(props); 
+    this.state={
+      showFull: false
+    };
+  }
+  handleShowFull(event){
+    event.preventDefault();
+    console.log(this.state);
+    this.setState({showFull:!this.state.showFull})
+    console.log(this.state);
+
+  }
+
+
   render() {
-    const {title, description, image, alt, collaborators, links, skills} = this.props; 
+    const {title, description,short, image, alt, collaborators, links, skills} = this.props; 
     return (
       <div>
-      <div className="proj-card">
-        <img className="proj-image" src = {image} alt={alt}/>
-        <div className="proj-background"/>
-        <div className = "proj-content" >
-          <h3>{title}</h3>
-          <p className="proj-description">{description}</p>
-          {collaborators?<Collaboration collaborators={collaborators}/>:null}
-          {skills?<ProjectStack skills={skills}/>:null}
-          {links?<ProjectLinks links={links}/>:null}
+        <div className="proj-card">
+          <img className="proj-image" src = {image} alt={alt}/>
+          <div className="proj-background"/>
+          <div className = "proj-content" >
+            <h3>{title}</h3>
+            <p className="proj-description">{description}</p>
+            {collaborators?<Collaboration collaborators={collaborators}/>:null}
+            {skills?<ProjectStack skills={skills}/>:null}
+            {links?<ProjectLinks links={links}/>:null}
+          </div>
         </div>
-      </div>
-      <div className="pcard-small">
-        <div className="pimage-small"> 
-          <img src={image} alt={alt}/>
+        <div className="pcard-small">
+          <div className="pimage-small"> 
+            <img src={image} alt={alt}/>
+          </div>
+          <div className="pbackground-small">
+            <div className = "pcontent-small" >
+
+            <h3>{title}</h3>
+
+              {
+              (this.state.showFull === true)?
+              <p className="proj-description">{description}</p>              
+              :
+              <p className="proj-description">{short}</p>
+              }
+              {this.state.showFull===true? 
+              <div className="button-toggle"><button onClick={(event)=>this.handleShowFull(event)}>see less</button></div>
+              :
+              <div className="button-toggle"><button onClick={(event)=>this.handleShowFull(event)}>see more</button></div>
+              }
+
+              {collaborators?<Collaboration collaborators={collaborators}/>:null}
+              {skills?<ProjectStack skills={skills}/>:null}
+              {links?<ProjectLinks links={links}/>:null}
+              
+            </div>
+          </div>
         </div>
-        <div className="pbackground-small">
-        <div className = "pcontent-small" >
-         <h3>{title}</h3>
-           <p className="proj-description">{description}</p>
-           {collaborators?<Collaboration collaborators={collaborators}/>:null}
-           {skills?<ProjectStack skills={skills}/>:null}
-           {links?<ProjectLinks links={links}/>:null}
-         </div>
-        </div>
-      </div>
       </div>
     )
   }
@@ -108,6 +138,7 @@ class Projects extends PureComponent{
             links={proj.links}
             skills={proj.skills}
             key={proj.title}
+            short={proj.short}
           />
         ))}
       </div>

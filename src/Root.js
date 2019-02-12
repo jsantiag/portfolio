@@ -6,7 +6,6 @@ import Contact from './components/Contact';
 
 import projects from './content/projects';
 import './components/_Progress.css';
-import './components/_About.css';
 import './components/_Nav.css';
 import './components/_Contact.css';
 
