@@ -9,10 +9,6 @@
   line-height: 40px;
 }
 
-.scroll-link-container{
-  display:inline-flex;
-}
-
 
 li {
   list-style: none;
@@ -21,7 +17,6 @@ li {
   font-weight: 450;
   font-size: 1.3em;
   line-height: 50px;
-  color: rgb(47, 40, 53);
   display:flex;
   justify-content: space-evenly;
 }

@@ -1,0 +1,24 @@
+.contact-footer{
+    display: flex;
+    margin: 0 auto;
+    width:80%;
+    font-family: Verdana,Open Sans,Segoe UI,sans-serif;
+    font-size: 1em;
+    justify-content: space-evenly;
+    list-style: none;
+    line-height: 50px;  
+}
+.footer {
+  color:#F8B195;
+}
+
+
+@media only screen and (max-width:740px){
+  .contact-footer{
+    flex-direction: column;  
+  } 
+  .footer {
+  color:#F8B195;    
+  line-height: 20px;
+  }
+}

@@ -61,6 +61,7 @@ class ProjectCard extends PureComponent {
   render() {
     const {title, description, image, alt, collaborators, links, skills} = this.props; 
     return (
+      <div>
       <div className="proj-card">
         <img className="proj-image" src = {image} alt={alt}/>
         <div className="proj-background"/>
@@ -71,6 +72,21 @@ class ProjectCard extends PureComponent {
           {skills?<ProjectStack skills={skills}/>:null}
           {links?<ProjectLinks links={links}/>:null}
         </div>
+      </div>
+      <div className="pcard-small">
+        <div className="pimage-small"> 
+          <img src={image} alt={alt}/>
+        </div>
+        <div className="pbackground-small">
+        <div className = "pcontent-small" >
+         <h3>{title}</h3>
+           <p className="proj-description">{description}</p>
+           {collaborators?<Collaboration collaborators={collaborators}/>:null}
+           {skills?<ProjectStack skills={skills}/>:null}
+           {links?<ProjectLinks links={links}/>:null}
+         </div>
+        </div>
+      </div>
       </div>
     )
   }
