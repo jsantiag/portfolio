@@ -20,6 +20,16 @@ h3, .aboutMe-blurb{
   margin:auto;  
 }
 
+#sprite{
+  margin:auto !important;
+  width:70%;
+}
+
+.sprite-container > img {
+  display:flex;
+  justify-content: center;
+}
+
 
 
 

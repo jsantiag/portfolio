@@ -5,8 +5,10 @@ class AboutMeSection extends PureComponent {
     const {greetings, aboutMe, sprite} = this.props
     return (
       <div className="aboutMe-container">
-        <div className="aboutMe-background"/>  
-        <img href={sprite} alt="this is my pixel art self-portrait, short curly hair and gold hoops"/>        
+        <div className="aboutMe-background"/> 
+        <div id="sprite" className="sprite-container">
+          <img href={sprite} alt="this is my pixel art self-portrait, short curly hair and gold hoops"/>        
+        </div> 
         <h3>{greetings}</h3>
         <div className = "aboutMe-content" >
           <p className="aboutMe-blurb">{aboutMe}</p>
@@ -23,6 +25,7 @@ class About extends PureComponent{
       <AboutMeSection
         greetings={aboutMe.greetings}
         aboutMe={aboutMe.aboutMe}
+        sprite={aboutMe.sprite}
       />
     )
   }

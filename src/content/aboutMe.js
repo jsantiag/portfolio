@@ -1,5 +1,5 @@
 
-import me from '../images/mysprite.JPG';
+import me from 'C:/Users/jocel/Desktop/thinkful_projects/portfolio/jsantiag1/src/images/mysprite.JPG';
 
 const aboutMe = {
   sprite:me,
