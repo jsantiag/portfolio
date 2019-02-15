@@ -17,7 +17,7 @@ const projects = [
    title:`CallMEter`,
    short:`${indent}CallMEter is a tool for anyone who tracks minutes spent on calls for their business.`,
    description:`${indent}CallMEter is a tool for anyone who tracks minutes spent on calls for their business. \n \n${indent}CallMEter takes care of tracking calls made through your browser and on your phone with the help of Twilio's api. Invoices are generated based off time spent and contact settings, with the help of NodeMailer they can be sent with the click of a button. \n \n${indent}CallMEter was a team effort! Check out my 4 good friends and our live demo with the links below! `,
-   collaborators:[[`Brady Fox`,`https://www.bradycfox.com/`],[`Jonathon Garrett`,`http://jonathongarrett.com/`],[`Allister Rooke`, `portFolioLink` ],[`Sean Nealon`, `https://signalflowsean.netlify.com/`]],
+   collaborators:[[`Brady Fox`,`https://www.bradycfox.com/`],[`Jonathon Garrett`,`http://jonathongarrett.com/`],[`Allister Rooke`, `https://github.com/allistergg` ],[`Sean Nealon`, `https://signalflowsean.netlify.com/`]],
    image:callMEter,
    alt:`image landing page for CallMEter application`,
    skills:[
@@ -33,7 +33,7 @@ const projects = [
   title:`Emoji Tutor`,
   short:`${indent}Emoji Tutor is a linked list based, spaced-repetition learning app made to boost emoji literacy 👩‍🏫.`,
   description:`${indent}Emoji Tutor is a linked list based, spaced-repetition learning app made to boost emoji literacy 👩‍🏫.\n \n${indent}Emojis are quickly becoming a staple in modern communication 🗣️, use Emoji Tutor to keep up 🏃 with the times ⏳. \n \n${indent}I worked on Emoji Tutor with a great partner, check Logan out below!`,
-  collaborators:[[`Logan Wang`,`portfolioLink`]],
+  collaborators:[[`Logan Wang`,'https://loganwang.com/']],
   image:emoji,
   skills:[
     "ReactJS","Redux", "NodeJS", "Express", "Passport & Bcrypt", "JWT Auth", "Mongoose", "MongoDB", "Heroku"
