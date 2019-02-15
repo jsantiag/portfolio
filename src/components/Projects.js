@@ -83,10 +83,10 @@ class ProjectCard extends Component {
           <div className="proj-background"/>
           <div className = "proj-content" >
             <h3>{title}</h3>
+            {links?<ProjectLinks links={links}/>:null}
             <p className="proj-description">{description}</p>
             {collaborators?<Collaboration collaborators={collaborators}/>:null}
             {skills?<ProjectStack skills={skills}/>:null}
-            {links?<ProjectLinks links={links}/>:null}
           </div>
         </div>
         <div className="pcard-small">
@@ -97,10 +97,15 @@ class ProjectCard extends Component {
             <div className = "pcontent-small" >
 
             <h3>{title}</h3>
+            {links?<ProjectLinks links={links}/>:null}
 
               {
               (this.state.showFull === true)?
-              <p className="proj-description">{description}</p>              
+              <div className="mandatory-fulldesc-collab">
+              <p className="proj-description">{description}</p>
+              {collaborators?<Collaboration collaborators={collaborators}/>:null}
+              </div>
+              
               :
               <p className="proj-description">{short}</p>
               }
@@ -110,9 +115,7 @@ class ProjectCard extends Component {
               <div className="button-toggle"><button onClick={(event)=>this.handleShowFull(event)}>see more</button></div>
               }
 
-              {collaborators?<Collaboration collaborators={collaborators}/>:null}
               {skills?<ProjectStack skills={skills}/>:null}
-              {links?<ProjectLinks links={links}/>:null}
               
             </div>
           </div>
