@@ -79,7 +79,7 @@ class ProjectCard extends Component {
     return (
       <div>
         <div className="proj-card">
-          <img className="proj-image" src = {image} alt={alt}/>
+          <img className="proj-image" src = {image[0]} alt={alt}/>
           <div className="proj-background"/>
           <div className = "proj-content" >
             <h3>{title}</h3>
@@ -91,7 +91,7 @@ class ProjectCard extends Component {
         </div>
         <div className="pcard-small">
           <div className="pimage-small"> 
-            <img src={image} alt={alt}/>
+            <img src={image[1]?image[1]:image[0]} alt={alt}/>
           </div>
           <div className="pbackground-small">
             <div className = "pcontent-small" >
